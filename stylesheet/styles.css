@@ -1,0 +1,147 @@
+*{
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 60px;
+  font-size: 32px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a{
+  position: relative;
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before{
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background:green;
+  transition: .5s;
+}
+
+.navbar a:hover::before{
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+.Button{
+  background-color: white;
+  border: 2px solid green;
+  color: navy;
+  padding: 9px 29px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 3s;
+}
+
+.Button:hover{
+  background-color: green;
+  color: white;
+}
+
+.Jamb{
+  margin-top: 200px;
+  margin-left: 150px;
+  height: 100vh; 
+  width: 160vh;
+  border-radius: 5px;
+}
+
+h2{
+  text-align: center;
+  color: green;
+  font-size: xx-large;
+  font-weight: 700;
+  font-style: oblique;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 40px 30px 50px 80px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 70%;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 30px 0 rgba(0,0,0,0.2);
+}
+
+.contact{
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 700;
+  color: green;
+}
